@@ -1,0 +1,65 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="31">
+            <item index="0" class="java.lang.String" itemvalue="rsa" />
+            <item index="1" class="java.lang.String" itemvalue="numba" />
+            <item index="2" class="java.lang.String" itemvalue="kubernetes" />
+            <item index="3" class="java.lang.String" itemvalue="th2-grpc-act-omnet-asx" />
+            <item index="4" class="java.lang.String" itemvalue="setuptools" />
+            <item index="5" class="java.lang.String" itemvalue="numpy" />
+            <item index="6" class="java.lang.String" itemvalue="pyasn1" />
+            <item index="7" class="java.lang.String" itemvalue="requests" />
+            <item index="8" class="java.lang.String" itemvalue="th2-grpc-check1" />
+            <item index="9" class="java.lang.String" itemvalue="websocket-client" />
+            <item index="10" class="java.lang.String" itemvalue="pip" />
+            <item index="11" class="java.lang.String" itemvalue="zipp" />
+            <item index="12" class="java.lang.String" itemvalue="certifi" />
+            <item index="13" class="java.lang.String" itemvalue="oauthlib" />
+            <item index="14" class="java.lang.String" itemvalue="urllib3" />
+            <item index="15" class="java.lang.String" itemvalue="sseclient" />
+            <item index="16" class="java.lang.String" itemvalue="xlrd" />
+            <item index="17" class="java.lang.String" itemvalue="coverage" />
+            <item index="18" class="java.lang.String" itemvalue="pamqp" />
+            <item index="19" class="java.lang.String" itemvalue="wheel" />
+            <item index="20" class="java.lang.String" itemvalue="orjson" />
+            <item index="21" class="java.lang.String" itemvalue="aiormq" />
+            <item index="22" class="java.lang.String" itemvalue="psutil" />
+            <item index="23" class="java.lang.String" itemvalue="sortedcontainers" />
+            <item index="24" class="java.lang.String" itemvalue="pandas" />
+            <item index="25" class="java.lang.String" itemvalue="tqdm" />
+            <item index="26" class="java.lang.String" itemvalue="future" />
+            <item index="27" class="java.lang.String" itemvalue="cachetools" />
+            <item index="28" class="java.lang.String" itemvalue="yarl" />
+            <item index="29" class="java.lang.String" itemvalue="treelib" />
+            <item index="30" class="java.lang.String" itemvalue="openpyxl" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N801" />
+          <option value="N802" />
+          <option value="N806" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyStatementEffectInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="_dict_keys.__getitem__" />
+          <option value="_dict_values.__getitem__" />
+          <option value="main.df1" />
+          <option value="main.df2" />
+          <option value="main.n" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
