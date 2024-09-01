@@ -11,10 +11,9 @@ def scan_domain():
     data = request.json
     domain = data.get('domain')
     tool = data.get('tool')
-    timeout = data.get('timeout', 60)  # Default timeout of 60 seconds if not provided
     modules = data.get('modules', [])  # List of selected modules for theHarvester
 
-    print(f"Received scan request for domain: {domain} using tool: {tool} with timeout: {timeout} seconds")
+    print(f"Received scan request for domain: {domain} using tool: {tool}")
 
     start_time = datetime.now()
     result = ""
@@ -25,7 +24,7 @@ def scan_domain():
         print(f"theHarvester result: {result}")
     elif tool == "Amass":
         print("Running Amass...")
-        result = run_amass(domain, timeout)
+        result = run_amass(domain)
         print(f"Amass result: {result}")
     else:
         result = "Tool not supported."
@@ -53,8 +52,8 @@ def run_theharvester(domain, modules):
     else:
         return f"Error running theHarvester: {result.stderr}"
 
-def run_amass(domain, timeout):
-    command = f"amass enum -passive -d {domain} -timeout {timeout}"
+def run_amass(domain):
+    command = f"amass enum -passive -d {domain}"
     result = subprocess.run(command, shell=True, capture_output=True, text=True)
 
     if result.returncode == 0:
