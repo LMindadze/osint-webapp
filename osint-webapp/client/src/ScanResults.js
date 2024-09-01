@@ -5,10 +5,8 @@ import './App.css';
 const Modal = ({ selectedScan, onClose }) => {
     return (
         <div className="modal">
-            <h2>Details for {selectedScan.domain}</h2>
-            <div className="modal-content">
-                <div dangerouslySetInnerHTML={{ __html: selectedScan.result }} />
-            </div>
+            <h2 className="modal-header">Details for {selectedScan.domain}</h2>
+                <div className="modal-content" dangerouslySetInnerHTML={{ __html: selectedScan.result }} />
             <button className="close-btn" onClick={onClose}>Close</button>
         </div>
     );

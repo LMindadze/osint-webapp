@@ -124,11 +124,12 @@ button[type="submit"]:hover {
 /* Ensures modal overlays other content */
 .modal {
     position: fixed;
-    top: 10%;
-    left: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 90%;
     max-width: 800px;
-    max-height: 80vh;
+    max-height: 50vh;
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
@@ -137,14 +138,20 @@ button[type="submit"]:hover {
     flex-direction: column;
 }
 
+
 /* Other CSS remains the same */
 
+.modal-header {
+    display: flex;
+    justify-content: center;
+
+}
 
 .modal-content {
-    padding: 20px;
     overflow-y: auto;
     flex: 1;
     word-wrap: break-word;
+    padding-left: 20px;
 }
 
 .modal-content h2 {
@@ -179,14 +186,11 @@ button[type="submit"]:hover {
     background-color: #2d3748;
 }
 
-.close-btn-container {
-    padding: 10px 20px;
-    text-align: center;
-    background-color: #f7fafc;
-}
-
 .close-btn {
-    padding: 10px 20px;
+    margin-top: 1rem;
+    padding: 12px;
+    margin-left: 5%;
+    margin-bottom: 2%;
     font-size: 16px;
     color: #fff;
     background-color: #e53e3e;
@@ -194,7 +198,8 @@ button[type="submit"]:hover {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 10px;
+    width: 90%;
+    text-align: center;
 }
 
 .close-btn:hover {
