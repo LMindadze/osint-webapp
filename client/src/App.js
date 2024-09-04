@@ -4,6 +4,7 @@ import ScanResults from './ScanResults';
 import Header from './Header';
 import ScanForm from './ScanForm';
 import ProgressBar from './ProgressBar';
+import DarkMode from './DarkMode ';
 
 function App() {
     const [scanResults, setScanResults] = useState([]);
@@ -40,6 +41,7 @@ function App() {
 
     return (
         <div className="App">
+            <DarkMode />
             <Header />
             <ScanForm
                 setProgress={setProgress}

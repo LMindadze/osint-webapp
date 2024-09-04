@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/home assginment.iml" filepath="$PROJECT_DIR$/.idea/home assginment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/osint-webapp.iml" filepath="$PROJECT_DIR$/.idea/osint-webapp.iml" />
     </modules>
   </component>
 </project>

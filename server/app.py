@@ -16,7 +16,6 @@ def scan_domain():
     print(f"Received scan request for domain: {domain} using tool: {tool}")
 
     start_time = datetime.now()
-    result = ""
 
     if tool == "theHarvester":
         print("Running theHarvester with modules:", modules)
@@ -42,8 +41,7 @@ def scan_domain():
     return jsonify(response)
 
 def run_theharvester(domain, modules):
-    # Convert the list of modules into a comma-separated string
-    modules_string = ','.join(modules) if modules else 'bing'  # Default to 'bing' if no modules are selected
+    modules_string = ','.join(modules) if modules else 'bing'
     command = f"theHarvester -d {domain} -b {modules_string} -l 200"
     result = subprocess.run(command, shell=True, capture_output=True, text=True)
 

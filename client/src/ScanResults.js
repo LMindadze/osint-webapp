@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
 
-// Modal component for displaying detailed scan results
 const Modal = ({ selectedScan, onClose }) => {
     return (
         <div className="modal">
@@ -15,7 +14,6 @@ const Modal = ({ selectedScan, onClose }) => {
 const ScanResults = ({ scanResults, onDeleteAll, onDeleteResult }) => {
     const [selectedScan, setSelectedScan] = useState(null);
 
-    // Function to display details of a specific scan
     const handleViewDetails = (scan) => {
         setSelectedScan(scan);
     };

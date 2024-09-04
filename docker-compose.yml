@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  server:
+    build: ./server
+    image: lado1lado/osint-web-application:server
+    ports:
+      - "5000:5000"
+    networks:
+      - osint-net
+
+  client:
+    build: ./client
+    image: lado1lado/osint-web-application:client
+    ports:
+      - "3000:3000"
+    networks:
+      - osint-net
+
+networks:
+  osint-net:
+    driver: bridge
